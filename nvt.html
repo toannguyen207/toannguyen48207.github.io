@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="nvt.css" />
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.js"
+  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+    <h3>Tính Chu vi - Diện tích hình tròn</h3>
+    <p>Nhập bán kính hình tròn: <input type="number"  id="radius" placeholder="Nhập chu vi hình tròn" value="0" /></p> 
+    <p>Chu vi hình tròn là: <span id="circumference">0</span></p>
+    <p>Diện tích hình tròn là: <span id="acreage">0</span></p>
+    </div>
+    
+    <script type="text/javascript"> 
+    
+    </script>
+
+    <script type="text/javascript"> //JQUERY
+    $(document).ready(function(){
+        $("#radius").keyup(function(){
+        var r = $("#radius").val();
+        var circumferenceOfCircle = 2*3.14*r;
+        var acreageOfCircle = 3.14*r*r;
+
+        $("#circumference").text(circumferenceOfCircle);
+        $("#acreage").text(acreageOfCircle);
+
+            
+        })
+    })
+    </script>
+  
+  <h4>Web tạo bởi NVTTECH</h4>
+
+</body>
+</html>
